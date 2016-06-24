@@ -12,6 +12,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'omniauth-twitter'
 
 group :development, :test do
+	gem 'sqlite3'
   gem 'byebug'
 end
 
