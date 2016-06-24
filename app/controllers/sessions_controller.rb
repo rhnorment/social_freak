@@ -8,7 +8,16 @@ class SessionsController < ApplicationController
 		rescue
 			flash[:warning] = 'There was an error while trying to authenticate you...'
 		end
-		
+
+		redirect_to root_url
+	end
+
+	def destroy
+		if current_user
+			session.delete(:user_id)
+			flash[:success] = 'See you!'
+		end
+
 		redirect_to root_url
 	end
 
