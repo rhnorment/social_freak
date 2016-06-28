@@ -11,6 +11,7 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'omniauth-twitter'
 gem 'omniauth-facebook'
+gem 'omniauth-linkedin-oauth2'
 
 group :development, :test do
 	gem 'sqlite3'
